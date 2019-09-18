@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Chips</string>
+    <string name="basic_chips_title">hello chips</string>
+    <string name="action_chips_title">action chips</string>
+    <string name="choice_chips_title">choice chips</string>
+    <string name="input_chips_title">entry chips</string>
+    <string name="sedan_car">Sedan</string>
+    <string name="truck_car">Truck</string>
+    <string name="minivan_car">Minivan</string>
+    <string name="car_field">Car type</string>
+    <string name="share_action_chip">Share data</string>
+    <string name="send_action_chip">Send image</string>
+    <string name="call_action_chip">Make a call</string>
+    <string name="text_input_title">Hobbies</string>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FormHeader" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/bitter</item>
+        <item name="android:layout_marginTop">@dimen/space_12</item>
+        <item name="android:layout_marginBottom">@dimen/space_8</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColorHintEnabled</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">@dimen/line_height</item>
+    </style>
+
+    <style name="AppTheme.HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">@dimen/space_8</item>
+        <item name="android:layout_marginBottom">@dimen/space_8</item>
+        <item name="android:background">@color/textColorHintDisabled</item>
+    </style>
+
+    <!-- TODO 04. Chips. Actions Chips -->
+    <style name="AppTheme.ActionChip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- TODO 05. Chips. Make icon visible -->
+        <item name="chipIconVisible">true</item>
+        <!-- TODO 06. Chips. Customize colors and shape-->
+        <item name="chipBackgroundColor">@android:color/white</item>
+        <item name="chipStrokeColor">@color/colorAccent</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="chipCornerRadius">@dimen/chip_corner_radius</item>
+        <!-- TODO 08. Chips. Customize icon -->
+        <item name="chipIconTint">@color/colorAccent</item>
+        <item name="chipStartPadding">@dimen/space_12</item>
+        <item name="chipIconSize">@dimen/chip_icon_size</item>
+    </style>
+    <!-- TODO 11. Chips. Choice chips. Define style -->
+    <style name="AppTheme.ChoiceChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AppTheme.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="boxBackgroundColor">@android:color/white</item>
+    </style>
+
+</resources>
