@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FormHeader" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/bitter</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">@dimen/line_height</item>
+    </style>
+
+    <style name="AppTheme.FormSubheader" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- TODO 10: We can customize the colors of the elements in the TextInputLayout -->
+    <!-- TODO 11: Customize TextInputLayout colors: stroke, hint, startIcon, endIcon, background,
+        helper, error, counter -->
+
+</resources>
