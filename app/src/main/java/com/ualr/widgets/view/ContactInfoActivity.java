@@ -22,15 +22,15 @@ public class ContactInfoActivity extends AppCompatActivity {
         Contact contactInfo = intent.getParcelableExtra(ContactFormActivity.PARCELABLE_NAME);
         if (contactInfo == null) return;
         // TODO 20. UNCOMMENT THIS BLOCK
-//        TextView name = findViewById(R.id.nameTV);
-//        name.setText(contactInfo.getName());
-//        TextView phone = findViewById(R.id.phoneTV);
-//        phone.setText(contactInfo.getPhone());
-//        TextView email = findViewById(R.id.mailTV);
-//        email.setText(contactInfo.getEmail());
-//        TextView pet = findViewById(R.id.petTV);
-//        pet.setText(contactInfo.getPet());
-//        TextView notes = findViewById(R.id.notesTV);
-//        notes.setText(contactInfo.getNotes());
+        TextView name = findViewById(R.id.nameTV);
+        name.setText(contactInfo.getName());
+        TextView phone = findViewById(R.id.phoneTV);
+        phone.setText(contactInfo.getPhone());
+        TextView email = findViewById(R.id.mailTV);
+        email.setText(contactInfo.getEmail());
+        TextView pet = findViewById(R.id.petTV);
+        pet.setText(contactInfo.getPet());
+        TextView notes = findViewById(R.id.notesTV);
+        notes.setText(contactInfo.getNotes());
     }
 }

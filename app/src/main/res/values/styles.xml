@@ -14,15 +14,23 @@
         <item name="android:textFontWeight">700</item>
         <item name="android:textSize">@dimen/line_height</item>
         <!-- TODO 02: TextView. Center-align the text and capitalize it -->
+        <!-- do you know the difference between gravity and layout_gravity ?-->
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+
     </style>
 
     <style name="AppTheme.FormSubheader" parent="Widget.MaterialComponents.TextView">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <!-- TODO 03: TextView. Add a greater letter spacing to the paragraph --><!-- Default value is 0 -->
+        <!-- TODO 03: TextView. Add a smaller letter spacing to the paragraph --><!-- Default value is 0 -->
+        <item name="android:letterSpacing">-0.02</item>
         <!-- TODO 04: TextView. Modify lineSpacing using a multiplier--> <!-- Multiplier factor applied to the current lineHeight -->
+        <item name="android:lineSpacingMultiplier">1.14</item>
+        <item name="android:lineSpacingExtra">@dimen/space_8</item>
         <!-- TODO 05: TextView. Set line height --><!-- Overrides the multiplier effect -->
+        <item name="android:lineHeight">@dimen/space_24</item>
     </style>
 
     <style name="AppTheme.TextFieldContent" parent="Widget.MaterialComponents.TextView">
@@ -38,8 +46,11 @@
         <item name="android:layout_marginTop">@dimen/space_12</item>
         <item name="android:layout_marginBottom">@dimen/space_8</item>
         <!-- TODO 07: TextView. We can define the space between the drawable and the text in label -->
+        <item name="android:drawablePadding">@dimen/space_8</item>
         <!-- TODO 08: TextView. We can define the drawable color -->
+        <item name="android:drawableTint">@color/colorAccent</item>
         <!-- TODO 09: TextView. We can vertically align to the center both the image and the text-->
+        <item name="android:gravity">center_vertical</item>
     </style>
     <!-- TODO 11 CheckedTextView. Specific attributes like checkMark graphic must be defined -->
     <!-- We define a new style AppTheme.TextFieldLabel.Checkable that extends from the style of the
@@ -50,4 +61,19 @@
     <!-- backgroundTint: color of the bottom line -->
     <!-- textColorHint: color of the hint -->
     <!-- maxLine: maximum number of lines -->
+
+    <style name="AppTheme.TextField" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/background_tint</item>
+        <item name="android:textColorHint">@color/hint_tint</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/hint_text_size</item>
+    </style>
+
+    <style name="AppTheme.TextFieldLabel.Checkable" >
+        <item name="android:checkMark">@drawable/ic_checkmark</item>
+        <item name="android:checkMarkTint">@color/colorAccent</item>
+    </style>
+
 </resources>

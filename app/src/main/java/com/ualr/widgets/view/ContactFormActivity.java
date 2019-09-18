@@ -8,6 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.CheckedTextView;
+import android.widget.EditText;
 
 import com.ualr.widgets.R;
 import com.ualr.widgets.databinding.ActivityContactFormBinding;
@@ -44,12 +47,17 @@ public class ContactFormActivity extends AppCompatActivity {
     private void showContactInfo() {
         Intent intent = new Intent(this, ContactInfoActivity.class);
         // TODO 20. UNCOMMENT THIS LINE
-        //intent.putExtra(PARCELABLE_NAME, contactViewModel.getContactInfo());
+        intent.putExtra(PARCELABLE_NAME, contactViewModel.getContactInfo());
         startActivity(intent);
     }
 
     // TODO 14. CheckTextView. We have to handle the click event from java code and change the state programmatically -->
     // onCheckStateToggled function must be defined -->
-    // TODO 18. EditText. Disable when CheckedTextView is not checked.
+    public void onCheckStateToggled (View view) {
+        CheckedTextView petTextView = (CheckedTextView) view;
+        petTextView.setChecked(!petTextView.isChecked());
+        // TODO 18. EditText. Disable when CheckedTextView is not checked.
+        contactViewModel.petEnabled.set(petTextView.isChecked());
+    }
 
 }

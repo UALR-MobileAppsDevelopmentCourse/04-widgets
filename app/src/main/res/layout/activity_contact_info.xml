@@ -9,7 +9,7 @@
         android:padding="@dimen/space_24"
         android:orientation="vertical">
         <!-- TODO 20. UNCOMMENT THIS BLOCK -->
-        <!--TextView
+        <TextView
             style="@style/AppTheme.TextFieldLabel"
             android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
             android:text="@string/name_field_label" />
@@ -43,6 +43,6 @@
             android:text="@string/notes_field_label" />
         <TextView
             android:id="@+id/notesTV"
-            style="@style/AppTheme.TextFieldContent" /-->
+            style="@style/AppTheme.TextFieldContent" />
     </LinearLayout>
 </ScrollView>

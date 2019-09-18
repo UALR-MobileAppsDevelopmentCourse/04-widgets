@@ -15,8 +15,82 @@
             tools:context=".view.ContactFormActivity">
 
             <!-- TODO 01: Create header and subheader of the form -->
+            <TextView
+                style="@style/AppTheme.FormHeader"
+                android:text="@string/form_title" />
+
+            <TextView
+                style="@style/AppTheme.FormSubheader"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginBottom="@dimen/space_12"
+                android:text="@string/form_subtitle" />
+
             <!-- TODO 06: TextView. We are going to define several labels with descriptive images on the left -->
             <!-- We use them to identify the text fields in the form: name, phone, email, pets, notes -->
+
+            <TextView
+                android:text="@string/name_field_label"
+                android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+                style="@style/AppTheme.TextFieldLabel"/>
+
+            <EditText
+                android:text="@={viewModel.name}"
+                android:inputType="textCapWords"
+                android:hint="@string/name_field_hint"
+                style="@style/AppTheme.TextField" />
+
+            <TextView
+                android:text="@string/phone_field_label"
+                android:drawableStart="@drawable/ic_phone_black_24dp"
+                style="@style/AppTheme.TextFieldLabel"/>
+
+            <EditText
+                android:text="@={viewModel.phone}"
+                android:inputType="phone"
+                android:hint="@string/phone_field_hint"
+                style="@style/AppTheme.TextField" />
+
+            <TextView
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:text="@string/email_field_label"
+                style="@style/AppTheme.TextFieldLabel"/>
+
+            <EditText
+                android:text="@={viewModel.email}"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email_field_hint"
+                style="@style/AppTheme.TextField" />
+
+            <!-- TODO 11: We want the pet field to be checkable, o we are going to replace the corresponding
+            TextView with a checkable TextView -->
+
+            <CheckedTextView
+                android:text="@string/pet_field_label"
+                android:drawableStart="@drawable/ic_pets_black_24dp"
+                android:onClick="onCheckStateToggled"
+                style="@style/AppTheme.TextFieldLabel.Checkable"/>
+
+            <EditText
+                android:enabled="@{viewModel.petEnabled}"
+                android:text="@={viewModel.pet}"
+                android:id="@+id/pet_edit_text"
+                android:inputType="text"
+                android:hint="@string/pet_field_label"
+                style="@style/AppTheme.TextField" />
+
+            <TextView
+                android:drawableStart="@drawable/ic_create_black_24dp"
+                android:text="@string/notes_field_label"
+                style="@style/AppTheme.TextFieldLabel"/>
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:text="@={viewModel.notes}"
+                android:maxLines="4"
+                android:hint="@string/notes_field_hint"
+                style="@style/AppTheme.TextField" />
+
+
             <!-- TODO 15: EditText (Input text fields). -->
             <!-- We are going to define one EditText element for each text input field -->
             <!-- TODO 16: Define the common style of all EditText elements -->
@@ -35,7 +109,6 @@
     </ScrollView>
 
     <data>
-
         <variable
             name="viewModel"
             type="com.ualr.widgets.viewmodel.ContactViewModel" />
