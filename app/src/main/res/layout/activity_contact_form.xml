@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/space_24"
+            tools:context=".view.ContactFormActivity">
+
+            <TextView
+                style="@style/AppTheme.FormHeader"
+                android:text="@string/form_title" />
+
+            <TextView
+                style="@style/AppTheme.FormSubheader"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginBottom="@dimen/space_12"
+                android:text="@string/form_subtitle" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/contactTypeToggleGroup"
+                android:layout_gravity="center_horizontal"
+                app:singleSelection="true"
+                android:layout_marginTop="@dimen/space_12"
+                android:layout_marginBottom="@dimen/space_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:text="@string/family_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+                <com.google.android.material.button.MaterialButton
+                    android:text="@string/friend_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+                <com.google.android.material.button.MaterialButton
+                    android:text="@string/work_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/AppTheme.TextField"
+                app:startIconDrawable="@drawable/ic_perm_identity_black_24dp"
+                app:helperText="@string/name_field_helper"
+                app:endIconMode="clear_text">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name_field_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextInput"
+                style="@style/AppTheme.TextField"
+                app:helperText="@string/password_field_helper"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                app:endIconMode="password_toggle">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_field_hint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- TODO 04. MaterialRadioButton. Also a two state button. We cannot uncheck it. Usually used in radiogroups -->
+            <!-- TODO 05. MaterialRadioButton. Style definition is very similar to Checkbox style -->
+            <!-- TODO 06. RadioGroup. Group of radio buttons. It provides several options to the user. Only one can be selected -->
+            <!-- TODO 07. RadioGroup. Get the currently checked button -->
+
+            <!-- TODO 01. MaterialCheckbox. We define a checkbox which is basically a two-states button. Image + text-->
+            <!-- TODO 02. MaterialCheckbox. We define the style: button and button color -->
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_gravity="end"
+                style="@style/AppTheme.Button"
+                app:icon="@drawable/ic_add_a_photo_black_24dp"
+                app:iconGravity="start"
+                app:iconPadding="@dimen/space_12"
+                android:padding="@dimen/space_8"
+                android:text="@string/add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
