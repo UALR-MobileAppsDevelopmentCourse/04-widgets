@@ -1,0 +1,78 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FormHeader" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/bitter</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">@dimen/line_height</item>
+    </style>
+
+    <style name="AppTheme.FormSubheader" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.TextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/space_12</item>
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="startIconTint">@color/colorAccent</item>
+        <item name="endIconTint">@color/colorAccent</item>
+        <item name="boxBackgroundColor">@color/textColorHintDisabled</item>
+        <item name="helperTextTextColor">@color/colorPrimaryDark</item>
+        <item name="errorTextColor">@color/errorColor</item>
+        <item name="errorIconTint">@color/errorColor</item>
+        <item name="counterOverflowTextColor">@color/errorColor</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="rippleColor">@color/textColorHintDisabled</item>
+        <item name="iconTint">@color/colorAccent</item>
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="cornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <!-- TODO 02. MaterialCheckbox. We define the style: button, padding and button tint -->
+    <style name="AppTheme.Checkbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/checkbox_color</item>
+        <item name="android:button">@drawable/ic_cloud_checkbox</item>
+        <item name="android:paddingLeft">@dimen/space_12</item>
+    </style>
+
+    <!-- TODO 05. RadioButton. Style definition is very similar to Checkbox style -->
+    <style name="AppTheme.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="buttonTint">@color/checkbox_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.Switch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableTint">@color/textColorHintEnabled</item>
+        <item name="android:drawablePadding">@dimen/space_8</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/space_12</item>
+    </style>
+
+    <style name="AppTheme.ImageView.Fixed" parent="AppTheme">
+        <item name="android:layout_width">@dimen/image_size</item>
+        <item name="android:layout_height">@dimen/image_size</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/space_12</item>
+        <item name="android:titleMarginBottom">@dimen/space_12</item>
+    </style>
+    
+</resources>
