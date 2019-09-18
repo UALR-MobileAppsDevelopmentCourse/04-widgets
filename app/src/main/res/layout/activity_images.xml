@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- TODO 01: ImageView. Include images in the layout using ImageView -->
+
+    <!-- TODO 02: ImageView. Sometimes we have to use the image within and ImageView with a prefixed size -->
+    <!-- As we can see it doesn't perfectly fit its container -->
+
+    <!-- TODO 03: ImageView. Center the image in the view with no scaling -->
+
+    <!-- TODO 04: ImageView. The image is centered and scaled keeping the aspect ratio -->
+    <!-- Both dimensions of the image will be equal to or larger than the corresponding dimensions of the view -->
+
+    <!-- TODO 05: ImageView. We can also center the image and scale it to avoid overflowing its container -->
+
+    <!-- TODO 06: ImageView. We can also force the image to have the same dimensions its container has -->
+    
+</LinearLayout>
+</ScrollView>
