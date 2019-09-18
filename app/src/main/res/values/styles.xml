@@ -1,0 +1,43 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FormHeader" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/bitter</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">@dimen/line_height</item>
+    </style>
+
+    <style name="AppTheme.FormSubheader" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.TextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/space_12</item>
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="startIconTint">@color/colorAccent</item>
+        <item name="endIconTint">@color/colorAccent</item>
+        <item name="boxBackgroundColor">@color/textColorHintDisabled</item>
+        <item name="helperTextTextColor">@color/colorPrimaryDark</item>
+        <item name="errorTextColor">@color/errorColor</item>
+        <item name="errorIconTint">@color/errorColor</item>
+        <item name="counterOverflowTextColor">@color/errorColor</item>
+    </style>
+
+    <!-- TODO 03: We define a new style for the button based on the OutlinedButton style -->
+    <!-- TODO 04: We'll change textColor and rippleColor -->
+    <!-- TODO 07: We can modify the style of the button: icon, stroke and radius -->
+
+</resources>
