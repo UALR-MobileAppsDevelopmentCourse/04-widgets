@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO 01. Create a TextView element as page header -->
+    <!-- TODO 02. Define the basic layout properties: size + padding -->
+    <!-- TODO 03. Define the text to be displayed -->
+    <!-- TODO 04. Set text alignment: end -->
+    <!-- TODO 05. Set text color: yellow -->
+    <!-- TODO 06. Set text size -->
+    <!-- TODO 07. Set a color background for the text label: dark blue -->
+    <!-- TODO 08. Make the text bold -->
+    <!-- TODO 09. Set a custom font family: bitter -->
+
+
+    <!-- TODO 10. Create an additional TextView element representing the subheader of the page -->
+    <!-- TODO 11. Define the basic layout properties: size + padding -->
+    <!-- TODO 12. Set a custom font family: bitter -->
+    <!-- TODO 13. Set text color: light grey -->
+    <!-- TODO 14. Set text size -->
+    <!-- TODO 15. Define the text to be displayed -->
+    <!-- TODO 16. Make text bold -->
+
+
+    <!-- TODO 17. Create an additional TextView element representing the first paragraph on the page -->
+    <!-- TODO 18. Define the basic layout properties: size + padding -->
+    <!-- TODO 19. Define the text to be displayed -->
+    <!-- TODO 20. Limit the number of lines to 10 -->
+    <!-- TODO 21. Use a greater line height value for better readability -->
+
+
+    <!-- TODO 22. Create an additional TextView element representing a section title -->
+    <!-- TODO 23. Define the basic layout properties: size + padding -->
+    <!-- TODO 24. Define the text to be displayed -->
+    <!-- TODO 25. Set text color: blue -->
+    <!-- TODO 26. Make text bold -->
+    <!-- TODO 27. Add an icon to the label on the left of the text -->
+    <!-- TODO 28. Set the space between the icon and the text -->
+    <!-- TODO 29. Set icon color: blue -->
+    <!-- TODO 30. Center vertically the icon and the text -->
+
+
+    <!-- TODO 31. Create an additional TextView element representing the first paragraph on the page -->
+    <!-- TODO 32. Define the basic layout properties: size + padding -->
+    <!-- TODO 33. Define the text to be displayed -->
+    <!-- TODO 34. Limit the number of characters to 256 -->
+    <!-- TODO 35. Use a greater line height value for better readability -->
+
+
+</LinearLayout>

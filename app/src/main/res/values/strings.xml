@@ -1,16 +1,10 @@
 <resources>
-    <string name="app_name">Contacts</string>
-    <string name="form_title">create contact</string>
-    <string name="save_menu_option">save</string>
-    <string name="form_subtitle">Fill in all the fields. Remember that you have to provide real information.</string>
-    <string name="name_field_label">Name:</string>
-    <string name="name_field_hint">First name + last name</string>
-    <string name="phone_field_label">Phone:</string>
-    <string name="phone_field_hint">Personal / Professional</string>
-    <string name="email_field_label">Email:</string>
-    <string name="email_field_hint">Personal / Professional</string>
-    <string name="notes_field_label">Notes:</string>
-    <string name="notes_field_hint">Introduce everything you want to remember about the contact</string>
-    <string name="pet_field_label">Pet:</string>
-    <string name="pet_field_hint">Name or breed</string>
+    <string name="app_name">Article</string>
+    <string name="top_header">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="sub_header">Aliquam ac elit, vestibulum turpis.</string>
+    <string name="title_section">Lorem ipsum dolor sit amet</string>
+    <string name="text_section">
+        Vivamus porttitor, erat at aliquam mollis, risus ligula suscipit metus, id semper nisi dui lacinia leo. Praesent at feugiat sem. Vivamus consectetur arcu sit amet metus efficitur dapibus. Sed metus ligula, efficitur quis finibus nec, pellentesque nec nulla. Nunc nec magna iaculis turpis vehicula condimentum id lobortis lectus.
+        \n\nQuisque augue diam, convallis nec mollis in, placerat nec elit. Aliquam non erat tristique, consequat tortor ultricies, sodales erat. Aliquam quis enim eu nulla facilisis sollicitudin eu mollis mauris. Donec ornare urna non libero volutpat tempus. Mauris elementum egestas ex, a laoreet urna. Ut a magna mattis, sodales massa a, blandit justo.
+   </string>
 </resources>
