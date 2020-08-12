@@ -1,116 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <ScrollView
+    <!-- TODO 01. Create a TextView element as page header -->
+    <!-- TODO 02. Define the basic layout properties: size + padding -->
+    <!-- TODO 03. Define the text to be displayed -->
+    <!-- TODO 04. Set text alignment: end -->
+    <!-- TODO 05. Set text color: yellow -->
+    <!-- TODO 06. Set text size -->
+    <!-- TODO 07. Set a color background for the text label: dark blue -->
+    <!-- TODO 08. Make the text bold -->
+    <!-- TODO 09. Set a custom font family: bitter -->
+
+    <TextView
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="@dimen/header_height"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/bitter"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/space_24"
+        android:text="@string/top_header"
+        android:textAlignment="textEnd"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/header_text_size"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="@dimen/space_24"
-            tools:context=".view.ArticleActivity">
+    <!-- TODO 10. Create an additional TextView element representing the subheader of the page -->
+    <!-- TODO 11. Define the basic layout properties: size + padding -->
+    <!-- TODO 12. Set a custom font family: bitter -->
+    <!-- TODO 13. Set text color: light grey -->
+    <!-- TODO 14. Set text size -->
+    <!-- TODO 15. Define the text to be displayed -->
+    <!-- TODO 16. Make text bold -->
 
-            <!-- TODO 01: Create header and subheader of the form -->
-            <TextView
-                style="@style/AppTheme.FormHeader"
-                android:text="@string/form_title" />
+    <TextView
+        android:id="@+id/subheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitter"
+        android:padding="@dimen/space_24"
+        android:text="@string/sub_header"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/subheader_text_size"
+        android:textStyle="bold" />
 
-            <TextView
-                style="@style/AppTheme.FormSubheader"
-                android:layout_marginTop="@dimen/space_12"
-                android:layout_marginBottom="@dimen/space_12"
-                android:text="@string/form_subtitle" />
+    <!-- TODO 17. Create an additional TextView element representing the first paragraph on the page -->
+    <!-- TODO 18. Define the basic layout properties: size + padding -->
+    <!-- TODO 19. Define the text to be displayed -->
+    <!-- TODO 20. Limit the number of lines to 10 -->
+    <!-- TODO 21. Use a greater line height value for better readability -->
 
-            <!-- TODO 06: TextView. We are going to define several labels with descriptive images on the left -->
-            <!-- We use them to identify the text fields in the form: name, phone, email, pets, notes -->
+    <TextView
+        android:id="@+id/first_paragraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lineHeight="@dimen/line_height"
+        android:maxLines="10"
+        android:paddingStart="@dimen/space_24"
+        android:paddingEnd="@dimen/space_24"
+        android:paddingBottom="@dimen/space_24"
+        android:text="@string/text_section" />
 
-            <TextView
-                android:text="@string/name_field_label"
-                android:drawableStart="@drawable/ic_perm_identity_black_24dp"
-                style="@style/AppTheme.TextFieldLabel"/>
+    <!-- TODO 22. Create an additional TextView element representing a section title -->
+    <!-- TODO 23. Define the basic layout properties: size + padding -->
+    <!-- TODO 24. Define the text to be displayed -->
+    <!-- TODO 25. Set text color: blue -->
+    <!-- TODO 26. Make text bold -->
+    <!-- TODO 27. Add an icon to the label on the left of the text -->
+    <!-- TODO 28. Set the space between the icon and the text -->
+    <!-- TODO 29. Set icon color: blue -->
+    <!-- TODO 30. Center vertically the icon and the text -->
 
-            <EditText
-                android:text="@={viewModel.name}"
-                android:inputType="textCapWords"
-                android:hint="@string/name_field_hint"
-                style="@style/AppTheme.TextField" />
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_pets_black_24dp"
+        android:drawablePadding="@dimen/space_8"
+        android:drawableTint="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/space_24"
+        android:text="@string/title_section"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
 
-            <TextView
-                android:text="@string/phone_field_label"
-                android:drawableStart="@drawable/ic_phone_black_24dp"
-                style="@style/AppTheme.TextFieldLabel"/>
+    <!-- TODO 31. Create an additional TextView element representing the first paragraph on the page -->
+    <!-- TODO 32. Define the basic layout properties: size + padding -->
+    <!-- TODO 33. Define the text to be displayed -->
+    <!-- TODO 34. Limit the number of characters to 256 -->
+    <!-- TODO 35. Use a greater line height value for better readability -->
 
-            <EditText
-                android:text="@={viewModel.phone}"
-                android:inputType="phone"
-                android:hint="@string/phone_field_hint"
-                style="@style/AppTheme.TextField" />
+    <TextView
+        android:id="@+id/second_paragraph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:lineHeight="@dimen/line_height"
+        android:maxLength="256"
+        android:paddingStart="@dimen/space_24"
+        android:paddingTop="@dimen/space_24"
+        android:paddingEnd="@dimen/space_24"
+        android:paddingBottom="@dimen/space_24"
+        android:text="@string/text_section" />
 
-            <TextView
-                android:drawableStart="@drawable/ic_email_black_24dp"
-                android:text="@string/email_field_label"
-                style="@style/AppTheme.TextFieldLabel"/>
-
-            <EditText
-                android:text="@={viewModel.email}"
-                android:inputType="textEmailAddress"
-                android:hint="@string/email_field_hint"
-                style="@style/AppTheme.TextField" />
-
-            <!-- TODO 11: We want the pet field to be checkable, o we are going to replace the corresponding
-            TextView with a checkable TextView -->
-
-            <CheckedTextView
-                android:text="@string/pet_field_label"
-                android:drawableStart="@drawable/ic_pets_black_24dp"
-                android:onClick="onCheckStateToggled"
-                style="@style/AppTheme.TextFieldLabel.Checkable"/>
-
-            <EditText
-                android:enabled="@{viewModel.petEnabled}"
-                android:text="@={viewModel.pet}"
-                android:id="@+id/pet_edit_text"
-                android:inputType="text"
-                android:hint="@string/pet_field_label"
-                style="@style/AppTheme.TextField" />
-
-            <TextView
-                android:drawableStart="@drawable/ic_create_black_24dp"
-                android:text="@string/notes_field_label"
-                style="@style/AppTheme.TextFieldLabel"/>
-
-            <EditText
-                android:inputType="textMultiLine"
-                android:text="@={viewModel.notes}"
-                android:maxLines="4"
-                android:hint="@string/notes_field_hint"
-                style="@style/AppTheme.TextField" />
-
-
-            <!-- TODO 15: EditText (Input text fields). -->
-            <!-- We are going to define one EditText element for each text input field -->
-            <!-- TODO 16: Define the common style of all EditText elements -->
-            <!-- TODO 17: Define specific properties of each EditText element -->
-            <!-- hint: helper text used as placeholder -->
-            <!-- inputType: Defines the type of data being placed in a text field -->
-            <!-- TODO 19. Define observable fields in order to get values from the view -->
-            <!-- TODO 10. CheckedTextView. Extension of TextView -->
-            <!-- Mainly used in a lists. We'll use it here just for pedagogical purposes -->
-            <!-- TODO 11. CheckedTextView. Specific attributes like checkMark graphic must be defined -->
-            <!-- TODO 13. CheckTextView. We have to implement the state change of this widget -->
-            <!-- TODO 14. CheckTextView. We have to handle the click event from java code and change the state programmatically -->
-            <!-- onCheckStateToggled function must be defined -->
-            <!-- TODO 18. EditText. Disable when CheckedTextView is not checked -->
-        </LinearLayout>
-    </ScrollView>
-
-    <data>
-        <variable
-            name="viewModel"
-            type="com.ualr.widgets.viewmodel.ContactViewModel" />
-    </data>
-</layout>
+</LinearLayout>
