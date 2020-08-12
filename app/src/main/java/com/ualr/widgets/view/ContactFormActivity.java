@@ -2,18 +2,29 @@ package com.ualr.widgets.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.ualr.widgets.R;
+import com.ualr.widgets.databinding.ActivityContactFormBinding;
 
 public class ContactFormActivity extends AppCompatActivity {
 
     private static final int PASSWORD_CHARS = 8;
+    private ActivityContactFormBinding mBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact_form);
+        mBinding = ActivityContactFormBinding.inflate(getLayoutInflater());
+        setContentView(mBinding.getRoot());
+        mBinding.sendBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkPassword();
+            }
+        });
     }
 
     // TODO 08: Let's validate password in order to see how errors look like in TextInputLayout
